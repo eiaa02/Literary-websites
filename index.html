@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>M36文学网</title>
+    <link href="image/web.png" rel="icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/change.js"></script>
+    <style>
+        #item {
+            font-weight: 800;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 100px;
+            letter-spacing: .2rem;
+            text-align: left;
+            margin: 0 30px;
+            color: transparent;
+            text-shadow: 0 0 1px rgba(255, 255, 255, .6),
+                0 4px 4px rgba(0, 0, 0, .05);
+        }
+
+        .Box {
+            width: 100%;
+            height: 135px;
+            margin: 0 auto;
+        }
+
+        .row {
+            margin: 10px;
+            background-color: rgba(175, 218, 210, 0.40);
+            padding: 10px;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .row a {
+            /*display: block;*/
+            /*float: left;*/
+            width: 300px;
+            height: 225px;
+            margin: 20px;
+            padding: 0 30px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            color: black;
+        }
+
+        .row a img {
+            width: 75px;
+            float: left;
+        }
+
+        .row a:hover {
+            position: relative;
+            bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"><a href="index.html" title="返回首页"><img src="image/Hutao.png" alt="M36文学站" width="100" height="101"></a></div>
+
+    <!--主页目录编辑-->
+    <ul class="topmenu">
+        <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;</li>
+        <li><a class="active" href="index.html">首页</a></li>
+        <li><a href="html/complete.html">完本</a></li>
+        <li><a href="html/famous.html">名家经典</a></li>
+        <li><a href="html/foreign.html">国外经典</a></li>
+        <li><a href="html/Wuxia.html">武侠专区</a></li>
+        <li><a href="html/hist.html">历史专区</a></li>
+        <li><a href="html/sci.html">科幻专区</a></li>
+        <li><a href="html/fantasy.html">玄幻专区</a></li>
+        <li><a href="html/classify.html">作品分类</a></li>
+    </ul>
+    <div class="row">
+        <a href="html/to live.html">
+            <h2>《活着》</h2><img src="image/live.jpg"><br>荣获意大利格林扎纳•卡佛文学奖最高项、台湾《中国时报》10本好书奖、香港“博益”15本好书奖、第三届世界华文“冰心文学奖”。
+        </a>
+        <a href="html/blood.html">
+            <h2>《许三观卖血记》</h2><img src="image/blood.jpg"><br>
+            层叠样式表(Cascading StyleSheet)
+        </a>
+        <a href="html/santi.html">
+            <h2>《三体》》</h2><img src="image/santi.jpg"><br>JavaScript是web的编程语言
+        </a>
+        <a href="html/red.html">
+            <h2>《红高粱》</h2><img src="image/red.jpg"><br>
+        </a>
+        <a href="html/fire.html">
+            <h2>《冰与火之歌》</h2><img src="image/fire.jpg"><br>JavaScript是web的编程语言
+        </a><br>
+        <a href="html/people.html">
+            <h2>《人间失格》</h2><img src="image/people.jpg"><br>JavaScript是web的编程语言
+        </a>
+        <a href="html/year.html">
+            <h2>《百年孤独》</h2><img src="image/year.jpg"><br>JavaScript是web的编程语言
+        </a>
+        <a href="html/moon.html">
+            <h2>《月亮和六便士》</h2><img src="image/moon.jpg"><br>JavaScript是web的编程语言
+        </a>
+        <a href="html/older.html">
+            <h2>《老人与海》</h2><img src="image/older.jpg"><br>JavaScript是web的编程语言
+        </a>
+    </div>
+    <hr color="white">
+    <div class="foot" style="display: block">
+        <h3 align="center" class="sign">M36文学网</h3>
+        <h3 align="center" class="time"></h3>
+    </div>
+</body>
+<script type="text/javascript">
+    let index = 0;
+    let b = document.getElementsByClassName("Box");
+    let pItem = document.getElementById("item");
+    b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
+
+    function changeItem() {
+        index++;
+        if (index >= 3) index = 0;
+        for (let i = 0; i < 3; i++) {
+            if (index == 0) {
+                pItem.innerText = "HTML5";
+                pItem.style.textAlign = "left";
+                b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
+            }
+            if (index == 1) {
+                pItem.innerText = "CSS";
+                pItem.style.textAlign = "center";
+                b[0].style.backgroundColor = 'rgba(10,113,170,0.5)';
+            }
+            if (index == 2) {
+                pItem.innerText = "JavaScript";
+                pItem.style.textAlign = "right";
+                b[0].style.backgroundColor = 'rgba(103,169,105,0.8)';
+            }
+        }
+    }
+
+    setInterval(changeItem, 3500);//设置定时器0
+</script>
+</html>
