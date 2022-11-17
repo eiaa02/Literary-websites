@@ -1,5 +1,5 @@
-body {
-    background-color: rgba(219,242,255,0.62);
+.body {
+    background-color: rgb(255, 255, 255);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,6 +7,7 @@ body {
     margin: 0;
 }
 
+/*顶部照片颜色*/
 .header {
     background-image: url("../image/header.jpg");
     background-repeat: repeat-x;
@@ -39,34 +40,40 @@ h2 {
     text-decoration: none;
 }
 
+/*子页面主背景*/
 .row {
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: white;
     padding: 10px;
-
+    overflow: visible;
 }
 
 .active {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+/*顶栏背景颜色*/
 .topmenu {
     list-style-type: none;
     margin: 0;
+    border-radius: 15px;
     padding-left: 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #f1f2f3;
 }
+
 
 .topmenu li {
     float: left;
 }
 
+/*顶栏字体颜色*/
 .topmenu li a {
     margin: 0;
+    border-radius: 15px;
     padding: 20px 30px;
     display: block;
-    color: black;
+    color: #61666d;
 }
 
 .topmenu a:link {
@@ -75,4 +82,84 @@ h2 {
 
 .topmenu a:hover:not(.active) {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 150vh;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    background: url("https://static.pexels.com/photos/373934/pexels-photo-373934.jpeg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+div {
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+    margin: 50px;
+    border: 10px solid #ddd;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+}
+
+/*子页面侧边栏*/
+.sidemenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f2f3;
+    border-radius: 6px;
+}
+
+.sidemenu a {
+    display: block;
+    color: #000;
+    padding: 15px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidemenu a.active {
+    background-color: #555;
+    color: white;
+}
+
+.sidemenu a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.row div {
+    float: left;
+    margin: 10px;
+}
+
+/*子页面背景*/
+.content {
+    width: 70%;
+    margin: 20px;
+    padding: 0 30px;
+    border-radius: 6px;
+    background-color: #f1f2f3;
+}
+
+.row {
+    height: 900px;
+}
+
+/*主界面底部栏*/
+.foot {
+    background-color: #f1f2f3;
+    border-radius: 18px;
 }
