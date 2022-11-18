@@ -7,20 +7,11 @@
 ## 基本功能
 ### 网站首页
 ![image](https://user-images.githubusercontent.com/99958961/202754739-04458592-e658-42ed-a42a-3954cbfc9be4.png)
-第一版首页，勉强能看。
-           
-           
-           
-           
-           
-           
-           
-
-
-
+第一版首页，勉强能看。           
 ## 参与人员
 dq ms gzy
-
+## 工作进度
+11.18：建立所有所需html文件，将注释完善，优化首页观感，删除冗杂代码。
 
 ## 重要事项
 ### 复刻自Aceap搭建的Lessons-Website
