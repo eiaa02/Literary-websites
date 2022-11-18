@@ -1,28 +1,15 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>M36文学网</title>
     <link href="image/Hutao.png" rel="icon">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/change.js"></script>
     <style>
-        #item {
-            font-weight: 800;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 100px;
-            letter-spacing: .2rem;
-            text-align: left;
-            margin: 0 30px;
-            color: transparent;
-            text-shadow: 0 0 1px rgba(255, 255, 255, .6),
-                0 4px 4px rgba(0, 0, 0, .05);
-        }
         /*主界面背景*/
         .row {
             margin: 10px;
-            background-color: rgb(255, 255, 244);
+            background-color: #f7f6f2;
             padding: 10px;
             overflow: auto;
             display: flex;
@@ -30,7 +17,7 @@
             flex-wrap: wrap;
         }
 
-        /*主背景框内内容*/
+        /*主页热门小说展示框*/
         .row a {
             /*display: block;*/
             /*float: left;*/
@@ -44,6 +31,7 @@
             color: black;
         }
 
+        /*主页热门书籍封面图片*/
         .row a img {
             width: 100px;
             height: 140px;
@@ -59,24 +47,27 @@
 </head>
 
 <body>
+<!-- 顶部图片 -->
 <div class="header">
 </div>
 
-<!--主页目录编辑-->
+<!--主页顶部目录-->
 <ul class="topmenu">
     <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;
     </li>
-    <li><a class="active" href="index.html">首页</a></li>
-    <li><a href="html/complete.html">完本</a></li>
-    <li><a href="html/famous.html">名家经典</a></li>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="html/rank.html">排行</a></li>
+    <li><a href="html/famous.html">著名作家</a></li>
     <li><a href="html/foreign.html">国外经典</a></li>
     <li><a href="html/Wuxia.html">武侠专区</a></li>
-        <li><a href="html/hist.html">历史专区</a></li>
-        <li><a href="html/sci.html">科幻专区</a></li>
-        <li><a href="html/fantasy.html">玄幻专区</a></li>
-        <li><a href="html/classify.html">作品分类</a></li>
-    </ul>
+    <li><a href="html/hist.html">历史专区</a></li>
+    <li><a href="html/sci.html">科幻专区</a></li>
+    <li><a href="html/fantasy.html">玄幻专区</a></li>
+    <li><a href="html/classify.html">作品分类</a></li>
+</ul>
+
+<!-- 主页图书展示 -->
 <div class="row">
     <a href="html/to live.html">
         <h2 align="center">活着</h2><img src="image/live.jpg"><br>
@@ -105,41 +96,11 @@
     <a href="html/older.html">
         <h2 align="center">老人与海</h2><img src="image/older.jpg"><br>
     </a>
-    </div>
-    <div class="foot" style="display: block">
-        <h3 align="center" class="sign">M36文学网</h3>
-        <h3 align="center" class="time"></h3>
-    </div>
+</div>
+<!-- 底部栏 -->
+<div class="foot" style="display: block">
+    <h3 align="center" class="sign">M36文学网</h3>
+</div>
 </body>
-<script type="text/javascript">
-    let index = 0;
-    let b = document.getElementsByClassName("Box");
-    let pItem = document.getElementById("item");
-    b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
-
-    function changeItem() {
-        index++;
-        if (index >= 3) index = 0;
-        for (let i = 0; i < 3; i++) {
-            if (index == 0) {
-                pItem.innerText = "HTML5";
-                pItem.style.textAlign = "left";
-                b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
-            }
-            if (index == 1) {
-                pItem.innerText = "CSS";
-                pItem.style.textAlign = "center";
-                b[0].style.backgroundColor = 'rgba(10,113,170,0.5)';
-            }
-            if (index == 2) {
-                pItem.innerText = "JavaScript";
-                pItem.style.textAlign = "right";
-                b[0].style.backgroundColor = 'rgba(103,169,105,0.8)';
-            }
-        }
-    }
-
-    setInterval(changeItem, 3500);//设置定时器0
-</script>
 
 </html>
