@@ -1,68 +1,34 @@
-.body {
-    background-color: rgb(255, 255, 255);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-}
+/* 注意事项 */
+/* 本小组作业中所有使用到的颜色
+   #f1f2f3淡灰 文字区域使用
+   #f7f6f2淡黄 背景区域使用
+   #555   深灰 在淡灰区块内凸显
+   #61666d深灰 淡灰区块内文字
+   #ffd900亮黄 标记
+*/
 
-/*顶部照片颜色*/
+/*顶部照片*/
 .header {
     background-image: url("../image/header.jpg");
-    background-repeat: repeat-x;
     height: 100px;
-    margin: 10px;
-    color: white;
-    font-size: 20px;
-    font-family: STZhongsong, serif;
+    margin: 5px;
 }
 
-.header img {
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-    background-repeat: inherit;
-}
-
-.sign {
-    color: #660000;
-}
-
-h2 {
-    color: #000000;
-}
-
-.other {
-    font-size: 20px;
-    font-weight: bold;
-    color: #660000;
-    text-decoration: none;
-}
-
-/*子页面主背景*/
-.row {
-    margin: 10px;
-    background-color: white;
-    padding: 10px;
-    overflow: visible;
-}
-
-.active {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-/*顶栏背景颜色*/
+/*顶栏目录*/
 .topmenu {
     list-style-type: none;
+    /* 给定元素设置所有四个（上下左右）方向的外边距属性 */
     margin: 0;
+    /* 框的圆角 */
     border-radius: 15px;
+    /* 是指一个元素在内边距区域（padding area）中左边的宽度 */
     padding-left: 10px;
+    /* 设置了元素溢出时所需的行 */
     overflow: hidden;
     background-color: #f1f2f3;
 }
 
-
+/* 顶栏目录定位 */
 .topmenu li {
     float: left;
 }
@@ -76,43 +42,38 @@ h2 {
     color: #61666d;
 }
 
+/* 去除顶栏文字下划线 */
 .topmenu a:link {
     text-decoration: none;
 }
 
+/* 实现顶栏区块被选中效果 */
 .topmenu a:hover:not(.active) {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    height: 150vh;
+/*底部栏*/
+.foot {
+    background-color: #f7f6f2;
+    border-radius: 18px;
+    height: 50px;
 }
 
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 150vh;
-    background: url("https://static.pexels.com/photos/373934/pexels-photo-373934.jpeg") no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
-div {
-    width: 200px;
-    height: 120px;
-    line-height: 120px;
-    margin: 50px;
-    border: 10px solid #ddd;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
+/* 底栏内部文字颜色 */
+.sign {
+    color: #ffd900;
 }
 
+/*子页面主背景*/
+.row {
+    margin: 10px;
+    /* 子页面背景颜色尽量不要改,未实现根据文字长度延伸背景颜色 */
+    background-color: white;
+    padding: 10px;
+    overflow: visible;
+    height: 900px;
 }
+
 /*子页面侧边栏*/
 .sidemenu {
     list-style-type: none;
@@ -122,6 +83,7 @@ div {
     border-radius: 6px;
 }
 
+/*子页面侧边栏文字*/
 .sidemenu a {
     display: block;
     color: #000;
@@ -130,20 +92,15 @@ div {
     border-radius: 6px;
 }
 
+/*子页面侧边栏选中区域*/
 .sidemenu a.active {
     background-color: #555;
     color: white;
 }
-
-.sidemenu a:hover:not(.active) {
-    background-color: rgba(255, 255, 255, 1);
-}
-
 .row div {
     float: left;
     margin: 10px;
 }
-
 /*子页面背景*/
 .content {
     width: 70%;
@@ -151,14 +108,4 @@ div {
     padding: 0 30px;
     border-radius: 6px;
     background-color: #f1f2f3;
-}
-
-.row {
-    height: 900px;
-}
-
-/*主界面底部栏*/
-.foot {
-    background-color: #f1f2f3;
-    border-radius: 18px;
 }
