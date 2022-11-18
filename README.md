@@ -6,7 +6,8 @@
 - Html，css，少量js
 ## 基本功能
 ### 网站首页
-（还在敲代码）
+![image](https://user-images.githubusercontent.com/99958961/202754739-04458592-e658-42ed-a42a-3954cbfc9be4.png)
+第一版首页，勉强能看。
            
            
            
