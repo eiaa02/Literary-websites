@@ -52,6 +52,12 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.topmenu a.active {
+    background-color: #555;
+    color: white;
+
+}
+
 /*底部栏*/
 .foot {
     background-color: #f7f6f2;
@@ -76,6 +82,7 @@
 
 /*子页面侧边栏*/
 .sidemenu {
+    width: 180px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -109,3 +116,5 @@
     border-radius: 6px;
     background-color: #f1f2f3;
 }
+
+
