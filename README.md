@@ -7,7 +7,10 @@
 ## 基本功能
 ### 网站首页
 ![image](https://user-images.githubusercontent.com/99958961/202754739-04458592-e658-42ed-a42a-3954cbfc9be4.png)
-第一版首页，勉强能看。           
+第一版首页，勉强能看。 
+### 古籍经典
+![屏幕截图_20221119_185100](https://user-images.githubusercontent.com/99958961/202847086-1e34ea07-9b62-428f-974c-e13d94549dfa.png)
+
 ## 参与人员
 dq ms gzy
 ## 工作进度
