@@ -8,6 +8,13 @@
 </head>
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <style>
+    /* 古籍经典主框 */
+    .gujiMain {
+        overflow: auto;
+        display: flex;
+    }
+
+    /* 定位 */
     .bookList {
         width: 1000px;
         margin: 0 auto;
@@ -26,6 +33,7 @@
         display: table-cell;
     }
 
+    /* 古籍框内文字 */
     .bookList li a {
         text-align: center;
         margin: 0 auto;
@@ -40,17 +48,15 @@
         height: 168px;
     }
 
+    /* 鼠标选中颜色 */
     .bookList li a:hover {
         color: #ff0000;
     }
 
-    /* 古籍页面 */
+    /* 古籍logo */
     .gujiLogo {
         background-position: center top;
-        text-align: center;
-        display: block;
-        height: 158px;
-        line-height: 158px;
+        height: 130px;
         background-repeat: no-repeat;
     }
 
@@ -63,33 +69,7 @@
     .gujiLogo {
         background-image: url(../image/gujiLogo.png);
     }
-
-    .wenKuMenu li.hover {
-        color: #D59657;
-        width: 24%;
-        border-top: #E1C79B solid 2px;
-        border-bottom: #E1C79B solid 2px;
-        margin-top: -4px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 28px;
-        *zoom: 1;
-        _position: relative;
-    }
-
-    /*底部栏*/
-    .foot {
-        background-color: #f7f6f2;
-        border-radius: 18px;
-        height: 50px;
-    }
-
-    /* 底栏内部文字颜色 */
-    .sign {
-        color: #ffd900;
-    }
 </style>
-
 <body>
 <div class="header"><a href="../index.html" title="返回首页"><img alt="" src="../image/"></a></div>
 <!-- 顶部菜单 -->
@@ -109,71 +89,73 @@
 <div class='wenkuList gujiLogo'>
     <h1>古籍经典</h1>
 </div>
-<div class="tabContent bookList">
-    <ul>
-        <div id="menu_0" class="show">
-            <li><a href="https://www.8bei8.com/book/wenxindiaolong.html" title="《文心雕龙》">文心雕龙</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/mengzi.html" title="《孟子》">孟子</a></li>
-            <li><a href="https://www.8bei8.com/book/lunyu.html" title="《论语》">论语</a></li>
-            <li><a href="https://www.8bei8.com/book/shishuoxinyu.html" title="《世说新语》">世说新语</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/chuci.html" title="《楚辞》">楚辞</a></li>
-            <li><a href="https://www.8bei8.com/book/zhuangzi.html" title="《庄子》">庄子</a></li>
-            <li><a href="https://www.8bei8.com/book/shangshu.html" title="《尚书》">尚书</a></li>
-            <li><a href="https://www.8bei8.com/book/shijing.html" title="《诗经》">诗经</a></li>
-            <li><a href="https://www.8bei8.com/book/daxue.html" title="《大学》">大学</a></li>
-            <li><a href="https://www.8bei8.com/book/zhongyong.html" title="《中庸》">中庸</a></li>
-            <li><a href="https://www.8bei8.com/book/liji.html" title="《礼记》">礼记</a></li>
-            <li><a href="https://www.8bei8.com/book/mengxibitan.html" title="《梦溪笔谈》">梦溪笔谈</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/yuefushiji.html" title="《乐府诗集》">乐府诗集</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/xiaolinguangji.html" title="《笑林广记》">笑林广记</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/tiangongkaiwu.html" title="《天工开物》">天工开物</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/xiaojing.html" title="《孝经》">孝经</a></li>
-            <li><a href="https://www.8bei8.com/book/kongzijiayu.html" title="《孔子家语》">孔子家语</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/shuijingzhu.html" title="《水经注》">水经注</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/nongsangjiyao.html" title="《农桑辑要》">农桑辑要</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/wenchangxiaojing.html" title="《文昌孝经》">文昌孝经</a></li>
-            <li><a href="https://www.8bei8.com/book/juemiaohaoci.html" title="《绝妙好词》">绝妙好词</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/xuxiakeyouji.html" title="《徐霞客游记》">徐霞客游记</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/dizigui.html" title="《弟子规》">弟子规</a></li>
-            <li><a href="https://www.8bei8.com/book/zengguangxianwen.html" title="《增广贤文》">增广贤文</a></li>
-            <li><a href="https://www.8bei8.com/book/youxueqionglin.html" title="《幼学琼林》">幼学琼林</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/liaofansixun.html" title="《了凡四训》">了凡四训</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/caigentan.html" title="《菜根谭》">菜根谭</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/guwenguanzhi.html" title="《古文观止》">古文观止</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/rongzhaisuibi.html" title="《容斋随笔》">容斋随笔</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/weiluyehua.html" title="《围炉夜话》">围炉夜话</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/xiaochuangyouji.html" title="《小窗幽记》">小窗幽记</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/wangguoweishixuan.html" title="《王国维诗选》">王国维诗选</a></li>
-            <li><a href="https://www.8bei8.com/book/renjiancihua.html" title="《人间词话》">人间词话</a>
-            </li>
-            <li><a href="https://www.8bei8.com/book/wanyueci.html" title="《婉约词》">婉约词</a></li>
-            <li><a href="https://www.8bei8.com/book/chajing.html" title="《茶经》">茶经</a></li>
-            <li><a href="https://www.8bei8.com/book/24xiao.html" title="《二十四孝》">二十四孝</a>
-            </li>
-        </div>
-    </ul>
-    <!-- 底部栏 -->
-    <div class="foot" style="display: block">
-        <h3 align="center" class="sign">M36文学网</h3>
+<div class="gujiMain">
+    <div class="tabContent bookList">
+        <ul>
+            <div id="menu_0" class="show">
+                <li><a href="https://www.8bei8.com/book/wenxindiaolong.html" title="《文心雕龙》">文心雕龙</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/mengzi.html" title="《孟子》">孟子</a></li>
+                <li><a href="https://www.8bei8.com/book/lunyu.html" title="《论语》">论语</a></li>
+                <li><a href="https://www.8bei8.com/book/shishuoxinyu.html" title="《世说新语》">世说新语</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/chuci.html" title="《楚辞》">楚辞</a></li>
+                <li><a href="https://www.8bei8.com/book/zhuangzi.html" title="《庄子》">庄子</a></li>
+                <li><a href="https://www.8bei8.com/book/shangshu.html" title="《尚书》">尚书</a></li>
+                <li><a href="https://www.8bei8.com/book/shijing.html" title="《诗经》">诗经</a></li>
+                <li><a href="https://www.8bei8.com/book/daxue.html" title="《大学》">大学</a></li>
+                <li><a href="https://www.8bei8.com/book/zhongyong.html" title="《中庸》">中庸</a></li>
+                <li><a href="https://www.8bei8.com/book/liji.html" title="《礼记》">礼记</a></li>
+                <li><a href="https://www.8bei8.com/book/mengxibitan.html" title="《梦溪笔谈》">梦溪笔谈</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/yuefushiji.html" title="《乐府诗集》">乐府诗集</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/xiaolinguangji.html" title="《笑林广记》">笑林广记</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/tiangongkaiwu.html" title="《天工开物》">天工开物</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/xiaojing.html" title="《孝经》">孝经</a></li>
+                <li><a href="https://www.8bei8.com/book/kongzijiayu.html" title="《孔子家语》">孔子家语</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/shuijingzhu.html" title="《水经注》">水经注</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/nongsangjiyao.html" title="《农桑辑要》">农桑辑要</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/wenchangxiaojing.html" title="《文昌孝经》">文昌孝经</a></li>
+                <li><a href="https://www.8bei8.com/book/juemiaohaoci.html" title="《绝妙好词》">绝妙好词</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/xuxiakeyouji.html" title="《徐霞客游记》">徐霞客游记</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/dizigui.html" title="《弟子规》">弟子规</a></li>
+                <li><a href="https://www.8bei8.com/book/zengguangxianwen.html" title="《增广贤文》">增广贤文</a></li>
+                <li><a href="https://www.8bei8.com/book/youxueqionglin.html" title="《幼学琼林》">幼学琼林</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/liaofansixun.html" title="《了凡四训》">了凡四训</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/caigentan.html" title="《菜根谭》">菜根谭</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/guwenguanzhi.html" title="《古文观止》">古文观止</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/rongzhaisuibi.html" title="《容斋随笔》">容斋随笔</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/weiluyehua.html" title="《围炉夜话》">围炉夜话</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/xiaochuangyouji.html" title="《小窗幽记》">小窗幽记</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/wangguoweishixuan.html" title="《王国维诗选》">王国维诗选</a></li>
+                <li><a href="https://www.8bei8.com/book/renjiancihua.html" title="《人间词话》">人间词话</a>
+                </li>
+                <li><a href="https://www.8bei8.com/book/wanyueci.html" title="《婉约词》">婉约词</a></li>
+                <li><a href="https://www.8bei8.com/book/chajing.html" title="《茶经》">茶经</a></li>
+                <li><a href="https://www.8bei8.com/book/24xiao.html" title="《二十四孝》">二十四孝</a>
+                </li>
+            </div>
+        </ul>
     </div>
+</div>
+<!-- 底部栏 -->
+<div class="foot" style="display: block">
+    <h3 align="center" class="sign">M36文学网</h3>
 </div>
 
 </body>
