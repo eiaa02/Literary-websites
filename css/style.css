@@ -7,6 +7,10 @@
    #ffd900亮黄 标记
 */
 
+body {
+    background-color: #f7f6f2;
+}
+
 /*顶部照片*/
 .header {
     background-image: url("../image/header.jpg");
@@ -60,7 +64,7 @@
 
 /*底部栏*/
 .foot {
-    background-color: #f7f6f2;
+    background-color: #96a8b9;
     border-radius: 18px;
     height: 50px;
 }
@@ -74,7 +78,7 @@
 .row {
     margin: 10px;
     /* 子页面背景颜色尽量不要改,未实现根据文字长度延伸背景颜色 */
-    background-color: white;
+    background-color: #f7f6f2;
     padding: 10px;
     overflow: visible;
     height: 900px;
@@ -104,10 +108,12 @@
     background-color: #555;
     color: white;
 }
+
 .row div {
     float: left;
     margin: 10px;
 }
+
 /*子页面背景*/
 .content {
     width: 70%;
@@ -116,5 +122,3 @@
     border-radius: 6px;
     background-color: #f1f2f3;
 }
-
-
