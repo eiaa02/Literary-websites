@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<!--主页-->
+    <!--主页-->
     <meta charset="UTF-8">
     <title>M36文学网</title>
     <link href="image/Hutao.png" rel="icon">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <style>
         /*主界面背景*/
-        .row {
+        .Main {
             margin: 10px;
-            background-color: #f7f6f2;
             padding: 10px;
             overflow: auto;
             display: flex;
@@ -19,7 +19,7 @@
         }
 
         /*主页热门小说展示框*/
-        .row a {
+        .Main a {
             /*display: block;*/
             /*float: left;*/
             width: 300px;
@@ -33,16 +33,104 @@
         }
 
         /*主页热门书籍封面图片*/
-        .row a img {
+        .Main a img {
             width: 100px;
             height: 140px;
             border-radius: 10px;
             float: left;
         }
 
-        .row a:hover {
+        .Main a:hover {
             position: relative;
             bottom: 10px;
+        }
+
+        /*俳句*/
+        .paijuMain {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+            background: url('image/flowerBorder.png') center center no-repeat;
+        }
+
+        .paiju {
+            float: left;
+            margin-right: 2px;
+        }
+
+        /* 标题格式 */
+        .paiju h2 {
+            width: 18px;
+            font-size: 16px;
+            float: left;
+            height: 130px;
+            font-weight: normal;
+            margin-left: 10px;
+            margin-top: 20px;
+            color: #567878;
+        }
+
+        /* 俳句格式 */
+        .paiju li {
+            text-align: center;
+            list-style: none;
+            float: left;
+            width: 155px;
+            height: 150px;
+            padding-top: 3px;
+        }
+
+        /* 俳句底部线条 */
+        .paiju li div {
+            font-size: 18px;
+            color: #89520A;
+            line-height: 28px;
+            height: 113px;
+            background: url('image/paijuLine.gif') center bottom no-repeat;
+            margin: 15px auto 0;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        /* 诗词名称，作者小字实现 */
+        .paiju li span {
+            color: #888;
+            font-size: 14px;
+            font-family: 'num', 'Simsun', '宋体', serif;
+            float: right;
+            margin-right: 20px;
+            overflow: hidden;
+            display: block;
+        }
+
+        /*介绍*/
+        .jieshao {
+            width: 400px;
+            height: 145px;
+            float: left;
+        }
+
+        /*logo图片*/
+        .logo {
+            width: 125px;
+            height: 125px;
+            margin-left: 80px;
+            margin-top: 35px;
+            float: left;
+        }
+
+        /* 介绍框文字定位 */
+        #dialog {
+            display: block;
+            margin-left: 30px;
+            margin-top: 30px;
+            width: 380px;
+        }
+
+        /* 介绍框字体大小 */
+        .Say {
+            color: #5B5958;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -51,7 +139,6 @@
 <!-- 顶部图片 -->
 <div class="header">
 </div>
-
 <!--主页顶部目录-->
 <ul class="topmenu">
     <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -66,8 +153,37 @@
     <li><a href="html/fantasy.html">奇幻专区</a></li>
     <li><a href="html/classify.html">作品分类</a></li>
 </ul>
+<!-- 主页俳句 -->
+<div class="paijuMain">
+    <div class="paiju">
+        <h2>︿<br>绝美诗词<br> ﹀</h2>
+        <ul id="paiju">
+            <li>
+                <div>人生若只如初见<br>何事秋风悲画扇<br><span>纳兰性德《木兰花》
+                        </span></div>
+            </li>
+            <li>
+                <div>问君能有几多愁<br>恰似一江春水向东流<br><span>李煜《虞美人》
+                        </span></div>
+            </li>
+        </ul>
+    </div>
+    <!-- 网站介绍 -->
+    <div class="jieshao">
+        <div id="dialog">
+            <div class="Say">
+                (◕‿◕✿)欢迎来到M36文学站！<br>很高兴有缘与您相遇ღ<br>
+                如果快乐是一种本领的话，那我希望你是那个最厉害的人(♥ó㉨ò)ﾉ♡
+            </div>
+        </div>
+    </div>
+    <!-- logo图片 -->
+    <div class="logo">
+        <img src=image/Hutao.png width="101" height="100">
+    </div>
+</div>
 <!-- 主页图书展示 -->
-<div class="row">
+<div class="Main">
     <a href="html/to live.html">
         <h2 align="center">活着</h2><img src="image/live.jpg"><br>
     </a>
@@ -97,8 +213,9 @@
     </a>
 </div>
 <!-- 底部栏 -->
-<div class="foot" style="display: block">
+<div class="foot">
     <h3 align="center" class="sign">M36文学网</h3>
 </div>
 </body>
+
 </html>
