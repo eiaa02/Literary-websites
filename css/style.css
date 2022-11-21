@@ -6,9 +6,11 @@
    #61666d深灰 淡灰区块内文字
    #ffd900亮黄 标记
 */
-
 body {
     background-color: #f7f6f2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /*顶部照片*/
@@ -62,26 +64,13 @@ body {
 
 }
 
-/*底部栏*/
-.foot {
-    background-color: #96a8b9;
-    border-radius: 18px;
-    height: 50px;
-}
-
-/* 底栏内部文字颜色 */
-.sign {
-    color: #ffd900;
-}
-
 /*子页面主背景*/
 .row {
+    flex: 1 0 auto;
     margin: 10px;
     /* 子页面背景颜色尽量不要改,未实现根据文字长度延伸背景颜色 */
     background-color: #f7f6f2;
     padding: 10px;
-    overflow: visible;
-    height: 900px;
 }
 
 /*子页面侧边栏*/
@@ -122,3 +111,17 @@ body {
     border-radius: 6px;
     background-color: #f1f2f3;
 }
+
+/* 底部栏 */
+.footer {
+    margin-top: 20px;
+    background: #f1f2f3;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: #89520A;
+}
+
+
+
+
