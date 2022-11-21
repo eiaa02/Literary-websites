@@ -1,0 +1,90 @@
+/*正文*/
+.article,
+#article,
+.wenzhang,
+#wenzhang {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 23px;
+    font-family: 'num', 'geo', 'simsun', "宋体", "Hiragino Sans GB", "PingFang SC", "PingFang TC", "Microsoft YaHei", "WenQuanYi Micro Hei", "HanaMinB", serif;
+    line-height: 2;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: bold;
+}
+
+/*标题章节号  文章距离标题高度*/
+#chapter {
+    position: relative;
+    line-height: 35px;
+    margin: 30px;
+}
+
+/* 每个古籍的介绍 */
+.guwen,
+.guwenAdvanced {
+    width: 95%;
+    font-size: 22px;
+    color: #333;
+    overflow: hidden;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    border-color: #E6E6E6;
+    border-style: double;
+}
+
+/* 目录位置 */
+.menu a {
+    float: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: #005A6A;
+    display: block;
+    background: #F7F7F7;
+    font-family: 'num', 'PingFang SC', 'PingFang TC', 'Microsoft Yahei', 'HanaMinB', sans-serif;
+}
+
+/*odd奇数even偶数行 默认移动端两列 pc端5列*/
+.menu a:nth-of-type(odd) {
+    background: #EBF5F7;
+}
+
+.menu a:nth-of-type(even) {
+    background: #F7F7F7;
+}
+
+.menu a {
+    padding: 7px;
+    margin: 0 1px 2px 1px;
+    white-space: nowrap;
+    width: 18%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    _margin-left: -3px;
+    _background: none;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.menu a:hover {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    background: #00A6AC;
+}
+
+/*1列*/
+.menu .list1 a {
+    width: 96%;
+}
+
+/*2列*/
+.menu .list2 a {
+    width: 48%;
+}
+
+/*3列*/
+.menu .list3 a {
+    width: 31%;
+}
