@@ -6,6 +6,7 @@
    #61666d深灰 淡灰区块内文字
    #ffd900亮黄 标记
 */
+
 body {
     background-color: #f7f6f2;
     display: flex;
@@ -240,6 +241,16 @@ body {
     background-color: #f1f2f3;
 }
 
+/* 专区超链接 */
+.clean a:link {
+    text-decoration: none;
+}
+
+.clean a:active {
+    test: expression(target="_blank");
+}
+
+
 /* 底部栏 */
 .footer {
     margin-top: 20px;
@@ -249,7 +260,3 @@ body {
     text-align: center;
     color: #89520A;
 }
-
-
-
-
